@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile first</title>
+    <link rel="stylesheet" href="/mobile-first/mobile-first.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
+    <link rel="stylesheet" href="/iconmonstr-iconic-font-1.3.0/css/iconmonstr-iconic-font.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="hero-section">
+        <img
+          src="/fontawesome-free-5.15.1-web/svgs/brands/shopify.svg"
+          alt="logo" class="logo" id="logo"
+        /> 
+        <nav class="nav-bar">
+          <i class="fa fa-bars" class="menu" id="menu"></i>
+          <ul class="hide-mobile show-desktop" id="hide">
+              <li class="exit hide-mobile" id="exit"><i class="fa fa-times"></i></8i>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">SignIn</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="landing-page">
+        <h1>We Style You Up !</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          ratione molestias illo ipsum qui labore.
+        </p>
+      </div>
+      <section class="collections">
+          <h2>Our Collections</h2>
+          <ul>
+              <li>
+                  <img src="/e-images/Air Jordan 1 _ THE CUSTOM MOVEMENT.jpg" style="width:8em;" alt="">
+                  <h3>Nike Air</h3>
+                  <h5>GH&#162; 49.99</h5>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star-half"></i>
+                  <i class="im im-star-o"></i>
+                  <a href="#"><h4>Add To Cart</h4></a>
+              </li>
+              <li>
+                  <img src="/e-images/efya-odo.jpg" style="width:8em;" alt="">
+                  <h3>Ladies wear</h3>
+                  <h5>GH&#162; 49.99</h5>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star-half"></i>
+                  <i class="im im-star-o"></i>
+                  <a href="#"><h4>Add To Cart</h4></a>
+              </li>
+              <li>
+                  <img src="/e-images/kidi.jpg" style="width:8em;" alt="">
+                  <h3>Classic</h3>
+                  <h5>GH&#162; 49.99</h5>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star-half"></i>
+                  <i class="im im-star-o"></i>
+                  <a href="#"><h4>Add To Cart</h4></a>
+              </li>
+              <li>
+                  <img src="/e-images/spurs.jpg" style="width:8em;" alt="">
+                  <h3>Sports wear</h3>
+                  <h5>GH&#162; 49.99</h5>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star"></i>
+                  <i class="im im-star-half"></i>
+                  <i class="im im-star-o"></i>
+                  <a href="#"><h4>Add To Cart</h4></a>
+              </li>
+          </ul>
+          <button class="cta-btn" id="cta-btn">Shop Now</button>
+      </section>
+      <div id="map">
+      </div>
+      <footer>
+          <div class="socials">
+              <a href=""><i class="im im-phone"></i></a>
+              <a href=""><i class="im im-whatsapp"></i></a>
+              <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+              <a href=""><i class="im im-instagram"></i></a>
+              <a href=""><i class="im im-twitter"></i></a>
+          </div>
+          <div class="address">
+              <blockquote>
+                  Zenu - Ashiaman <br>
+                  Accra, Ghana
+              </blockquote>
+              <h4>Seven_07 &copy; 2020 All Rights Reserved</h4>
+          </div>
+      </footer>
+      <nav class="sticky-nav"><a href="#">Shop Now !</a></nav>
+    </div>
+    <script>
+      function initMap() {
+        var location = { lat: 5.696800, lng: -0.024960};
+        var map = new goole.maps.Map(document.getElementById("map"), {
+          zoom : 4,
+          center : location
+        });
+      }
+    </script>
+  </body>
+</html>
